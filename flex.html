@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex properties</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    h1{
+      text-align: center;
+    }
+    #papa{
+      display: flex;
+      justify-content: center;
+    }
+    #container{
+      height: 800px;
+      width: 800px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      /* align-items: center; */
+      /* align-content:center; */
+    }
+    .box{
+      height: 100px;
+      width: 100px;
+      background-color:aquamarine;
+    }
+    #box2{
+      align-content:start;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flex Playground</h1>
+  <div id="papa">
+    <div id="container">This is a container.
+      <div id="box1" class="box">box1</div>
+      <div id="box2" class="box">box2</div>
+      <div id="box3" class="box">box3</div>
+      <div id="box4" class="box">box4</div>
+      <div id="box5" class="box">box5</div>
+    </div>
+  </div>
+</body>
+</html>
